@@ -1,0 +1,10 @@
+<div class="container">
+  <h3>My Bookmarked News...</h3>
+<div class="card-container  container-fluid">
+  <span class="small"></span>
+  <div *ngFor="let news of newsList">
+    <app-news-reader-card [newsItem]="news" (refresh)="bookMarks()"></app-news-reader-card>
+  </div>
+</div>
+</div>
+

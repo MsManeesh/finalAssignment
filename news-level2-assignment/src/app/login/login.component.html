@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="div1 login-c-form-wrapper d-flex flex-column">
+    <h3 style="text-align: center;">Sign In</h3>
+    <form >
+      <mat-form-field class="example-full-width d-flex justify-content-center" appearance="fill">
+        
+        <input type="text" [formControl]="username" matInput placeholder="user name" class="username">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width d-flex justify-content-center" appearance="fill">
+     
+      <input type="password" [formControl]="password" matInput placeholder="password" class="password">
+    </mat-form-field>
+    <div class="d-flex justify-content-around">
+      <button mat-raised-button color="primary" type="submit" mat-button (click)="loginSubmit()" [disabled]="!username.valid || !password.valid">Login</button>
+      <button mat-raised-button color="sucess" type="submit" mat-button (click)="registerUser()" [disabled]="!username.valid || !password.valid">Register</button>
+    </div>
+    <div class="container" style="text-align: center; color: red;">
+      <strong *ngIf="submitMessage" class="error-message">{{submitMessage}}</strong>
+    </div>
+    
+  </form>
+
+  </div>
+</div>

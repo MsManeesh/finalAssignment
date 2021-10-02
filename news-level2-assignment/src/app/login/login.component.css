@@ -1,0 +1,32 @@
+/* define style rules for login component elements */
+.div1{
+    box-shadow: 0 10px 6px rgba(13, 10, 189, 0.849), 0 3px 6px rgba(13, 10, 189, 0.849);
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    width: 50%;
+    height: 50vh;
+}
+.div1:hover{
+    box-shadow: 0 3px 6px rgba(26, 41, 172, 0.842), 0 6px 6px rgba(0,0,0,0.23);
+}
+button{
+    background: #4bbbbe85;
+    width: fit-content;
+    align-self: flex-end;
+
+}
+mat-form-field{
+    height: 80px;
+    width: 75%;
+    margin: 10px;
+}
+h3{
+    background-color: rgb(90, 73, 185);
+    color: cornsilk;
+}
+.message{
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}

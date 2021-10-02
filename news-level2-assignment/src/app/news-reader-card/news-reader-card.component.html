@@ -1,0 +1,18 @@
+<div class="news-image news-reader-card-container container">
+  <div>
+     <img [src]="newsItem.urlToImage" alt="Image">
+  </div>
+  <div class="news-content container">
+    <div><h2>{{newsItem.title}}</h2></div>
+    <div class="news-description">
+       {{newsItem.description}}
+    </div>
+    <div>
+      {{newsItem.content}}
+    </div>
+    <div class="news-url">
+        <a [href]="newsItem.url" target="_blank">Click to Read More</a>
+    </div>
+    <div><input  class="btn btn-danger" type="button" (click)="remove(newsItem.newsId)" value="Remove"></div> 
+  </div>
+  </div>

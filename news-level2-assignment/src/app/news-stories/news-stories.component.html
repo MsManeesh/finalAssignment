@@ -1,0 +1,7 @@
+<h3>Trending News Stories...</h3>
+<div class="card-container  container-fluid my-5 mx-0 row">
+<div *ngFor="let news of newsList" class="div1">
+    <app-news-story-card [newsItem]="news"></app-news-story-card>
+</div>
+  
+</div>

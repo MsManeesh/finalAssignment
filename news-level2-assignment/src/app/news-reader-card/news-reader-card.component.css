@@ -1,0 +1,36 @@
+.news-reader-card-container{
+    display:flex;
+    width : 80%;
+    border: 1px solid gray;
+    box-shadow: 5px 5px gray;
+    border-radius: 20px;
+    align-items: center;
+    margin: 30px;
+}
+
+
+.news-reader-card-container:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 4px 10px cadetblue;
+  
+}
+.news-image img{
+    width:250px;
+}
+
+.news-content{
+    padding:15px;
+    height:100%;
+    margin:10px;
+    overflow-y: auto;
+    text-align: justify;
+}
+
+.news-description{
+    padding-top:10px;
+}
+
+.news-url{
+    margin-top:20px;
+    margin-bottom: 0;
+}

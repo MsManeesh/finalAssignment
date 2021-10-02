@@ -1,0 +1,21 @@
+<mat-card class="container">
+    <mat-card-content>
+    <h1>{{newsItem.title}}</h1>
+    <p>{{newsItem.description}}</p>
+    </mat-card-content>
+    <div class="d-flex">
+        <div class="p-2">
+            <img [src]="newsItem.urlToImage" alt="image" width="300px" height="200px">
+        </div>
+        <div class="p-2 flex-grow-1">
+            <p>{{newsItem.content}}</p>
+            <b><i>{{newsItem.author}}</i></b>
+        </div>
+    </div>
+    <mat-error class="small text-wrap"></mat-error>
+    <small>{{confirmationMessage}}</small>
+    <mat-card-actions>   
+        <button mat-raised-button color="primary" (click)="addNews(newsItem)">Read Later</button>
+    </mat-card-actions>
+</mat-card>
+
